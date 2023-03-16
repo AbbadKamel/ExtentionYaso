@@ -39,7 +39,8 @@ function createAssistantMessageElement(text) {
 
 
 async function fetchChatGPTResponse(question) {
-  const apiKey = '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';
+
+  const apiKey = API_KEY;
   const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
   const headers = new Headers({
